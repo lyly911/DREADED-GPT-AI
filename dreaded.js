@@ -41,7 +41,7 @@ module.exports = dreaded = async (client, m, chatUpdate, store) => {
         : "";
     var budy = typeof m.text == "string" ? m.text : "";
    // leave the prefix string empty if you don't want the bot to use a prefix
-const mode = process.env.MODE || 'PUBLIC';
+const mode = process.env.MODE || 'privat';
     const prefix = process.env.PREFIX || '.';
 const Heroku = require("heroku-client");  
  const appname = process.env.APP_NAME || '';
@@ -49,7 +49,7 @@ const Heroku = require("heroku-client");
 const gptdm = process.env.GPT_INBOX || 'TRUE';
     const cmd = body.startsWith(prefix);
 //const autobio = process.env.AUTOBIO || 'TRUE';
-const botname = process.env.BOTNAME || 'dreaded BOT';
+const botname = process.env.BOTNAME || '❌Ǥ҉Ø҉Đ҉W҉Ɨ҉N҉❌';
 const antibot = process.env.ANTIBOT || 'TRUE';
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
@@ -81,18 +81,18 @@ const antibot = process.env.ANTIBOT || 'TRUE';
     };
     const mime = (quoted.msg || quoted).mimetype || "";
             const qmsg = (quoted.msg || quoted);
-    const author = process.env.STICKER_AUTHOR || 'fortunatus';
-const maindev = '254114018035';
+    const author = process.env.STICKER_AUTHOR || '❤️';
+const maindev = '2349012464012';
 const maindev2 = maindev.split(",");
 
-    const packname = process.env.STICKER_PACKNAME || 'dreaded';
-const dev = process.env.DEV || '254114018035'
+    const packname = process.env.STICKER_PACKNAME || '❌Ǥ҉Ø҉Đ҉W҉Ɨ҉N҉❌';
+const dev = process.env.DEV || '2349012464012'
 
 const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
-   const bad = process.env.BAD_WORD || 'fuck';
-    const autoread = process.env.AUTOREAD || 'TRUE';
+   const bad = process.env.BAD_WORD || 'null';
+    const autoread = process.env.AUTOREAD || 'false';
     const badword = bad.split(",");
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
     // Group
